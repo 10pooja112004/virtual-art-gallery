@@ -27,8 +27,8 @@ The **Virtual Art Gallery** is a full-stack web application where **Artists** ca
 
 ## 🛠️ Tech Stack
 
-| Frontend        | Backend          | Others                     |
-|----------------|------------------|-----------------------------|
+| Frontend        | Backend          | Others                      |
+|-----------------|------------------|-----------------------------|
 | React.js        | Spring Boot      | Stripe (Payment Gateway)    |
 | HTML, CSS       | Hibernate, JPA   | Cloudinary (File Storage)   |
 | Axios           | MySQL            | JWT (Security)              |
@@ -45,8 +45,7 @@ mvn clean spring-boot:run
 
 ###  Frontend
 ```bash in vscode
-cd Frontend
-$env:NODE_OPTIONS="--openssl-legacy-provider"
+cd Frontend/firstapp/$env:NODE_OPTIONS="--openssl-legacy-provider"
 npm start
 
 ## 📄 License
