@@ -1,54 +1,58 @@
-# 🎨 Virtual Art Gallery
+🎨 Virtual Art Gallery
+The Virtual Art Gallery is a full-stack web application that empowers Artists to showcase and sell their digital artwork, while allowing Buyers to explore, purchase, and securely download artworks. An Admin role is also included to oversee and manage platform operations.
 
-The **Virtual Art Gallery** is a full-stack web application where **Artists** can showcase and sell their artwork, and **Buyers** can explore, purchase, and securely download digital art. It also includes an admin role for platform monitoring.
+👥 User Roles
 
----
+1.  Artist
+    Upload, update, and delete artworks.
+    View orders and earnings reports.
 
-## 👥 User Roles
+2. Buyer
+    Browse and search artworks.
+    Add to cart, checkout, and make secure payments.
+    Download purchased digital art.
 
-- **Artist**: Upload, update, delete artwork, view sales and orders.
-- **Buyer**: Browse art, add to cart, pay via Stripe, download purchased art.
-- **Admin**: Manage users and artworks.
+3.  Admin
+    Manage users and artworks.
+    Monitor platform activity.
 
----
+🔐 Key Features
 
-## 🔐 Features
+🔑 Secure JWT-based authentication
+🛡️ Role-based authorization (Artist, Buyer, Admin)
+🖼️ Artwork management with Cloudinary integration
+🛒 Shopping cart and Stripe-powered checkout
+📥 Secure download of purchased artworks
+📊 Order history and earnings tracking for Artists
+📁 RESTful APIs with Spring Boot and Hibernate
+⚙️ Modular and scalable architecture
 
-- Secure **JWT authentication**
-- **Role-based access** for users
-- **Artwork management** (upload, edit, delete)
-- **Shopping cart** and **checkout system**
-- **Stripe payment integration**
-- **Download access** only after payment
-- **Order and earnings tracking**
-- Cloudinary image hosting
+🛠️ Tech Stack
 
----
+    Frontend	Backend	Integrations & Tools
+    React.js	Spring Boot	Stripe (Payment Gateway)
+    HTML, CSS	Hibernate, JPA	Cloudinary (Artwork Hosting)
+    Axios	MySQL	JWT (Security Authentication)
 
-## 🛠️ Tech Stack
+🚀 Getting Started
 
-| Frontend        | Backend          | Others                      |
-|-----------------|------------------|-----------------------------|
-| React.js        | Spring Boot      | Stripe (Payment Gateway)    |
-| HTML, CSS       | Hibernate, JPA   | Cloudinary (File Storage)   |
-| Axios           | MySQL            | JWT (Security)              |
+📦 Prerequisites
+    ReactJs (v16+ recommended)
+    Java (JDK 17+)
+    Maven
+    MySQL Server
 
----
-
-## 🚀 How to Run the Project
-
-###  Backend
-```bash in vscode
+🔧 Backend Setup
 cd Backend/Virtual_Art_GalleryFinal/virtualartgallery
-mvn clean spring-boot:run
+mvn clean install
+mvn spring-boot:run
 
-
-###  Frontend
-```bash in vscode
-cd Frontend/firstapp/$env:NODE_OPTIONS="--openssl-legacy-provider"
+💻 Frontend Setup
+cd Frontend/firstapp
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+npm install
 npm start
 
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](./LICENSE) file for full details.
+📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for more information.
